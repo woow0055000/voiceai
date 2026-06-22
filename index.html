@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صوتك</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="auth-bar" id="authBar">
+      <div class="auth-guest" id="authGuest">
+        <button class="btn btn-auth" id="signInBtn">تسجيل الدخول بPi</button>
+      </div>
+      <div class="auth-user" id="authUser" style="display:none;">
+        <span class="auth-username" id="authUsername"></span>
+        <button class="btn btn-auth btn-auth-out" id="signOutBtn">تسجيل الخروج</button>
+      </div>
+    </div>
+
+    <h1 class="title">صوتك</h1>
+    <p class="subtitle">تطبيق يتطور معك… كل كلمة تترك أثرًا.</p>
+
+    <div class="status">
+      <span id="level">المستوى: 1</span>
+      <span id="sessions">الجلسات: 0</span>
+    </div>
+
+    <div class="log" id="log">
+      <p>اضغط على زر التسجيل وابدأ بالكلام…</p>
+    </div>
+
+    <button id="recordBtn" class="btn">ابدأ التسجيل</button>
+
+    <div class="memory" id="memory" style="display:none;">
+      <p class="memory-label">🧠 آخر كلمة:</p>
+      <p id="lastWord">—</p>
+      <p class="memory-label" style="margin-top:6px;">📝 آخر جملة:</p>
+      <p id="lastSentence">—</p>
+    </div>
+
+    <p class="hint">ملاحظة: التطبيق يتذكر كلامك ويغيّر نفسه مع الوقت.</p>
+  </div>
+
+  <div class="signature" id="signature">woow005500</div>
+
+  <script src="db.js"></script>
+  <script src="pi-auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
