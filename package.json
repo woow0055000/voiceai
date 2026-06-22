@@ -1,0 +1,14 @@
+{
+  "name": "voiceai-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VoiceAI backend — Pi Network auth verification",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
